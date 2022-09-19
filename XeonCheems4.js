@@ -41,10 +41,10 @@ const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 const xeonkey = require('xfarr-api')
-const cheerio = require("cheerio")
+const cheerio = require ("cheerio")
 const { XeonBotIncTiktok } = require('./lib/tiktokbyxeon')
 let { msgFilter } = require('./lib/antispam')
-let { covid } = require('./lib/covid.js')
+let { covid } = require('./lib/covid.js') 
 const { EmojiAPI } = require("emoji-api")
 const emoji = new EmojiAPI()
 const thiccysapi = require('textmaker-thiccy')
@@ -52,142 +52,142 @@ const { XeonBotIncWiki } = require('./lib/xeonywiki.js')
 const textpro = require('./lib/textpro')
 const { mediafireDl } = require('./lib/mediafire.js')
 const { Gempa } = require("./lib/gempa.js")
-const { jadwaltv } = require('./lib/jadwaltv')
+const { jadwaltv }= require('./lib/jadwaltv')
 const xeontod = require("tod-api")
 const { pinterest } = require("./lib/pinterest")
 const toHur = require('@develoka/angka-terbilang-js')
 const { hentai } = require('./lib/scraper2.js')
 const {
-    FajarNews,
-    BBCNews,
-    metroNews,
-    CNNNews,
-    iNews,
-    KumparanNews,
-    TribunNews,
-    DailyNews,
-    DetikNews,
-    OkezoneNews,
-    CNBCNews,
-    KompasNews,
-    SindoNews,
-    TempoNews,
-    IndozoneNews,
-    AntaraNews,
-    RepublikaNews,
-    VivaNews,
-    KontanNews,
-    MerdekaNews,
-    KomikuSearch,
-    AniPlanetSearch,
-    KomikFoxSearch,
-    KomikStationSearch,
-    MangakuSearch,
-    KiryuuSearch,
-    KissMangaSearch,
-    KlikMangaSearch,
-    PalingMurah,
-    LayarKaca21,
-    AminoApps,
-    Mangatoon,
-    WAModsSearch,
-    Emojis,
-    CoronaInfo,
-    JalanTikusMeme,
-    Cerpen,
-    Quotes,
-    Couples,
-    Darkjokes
+ FajarNews, 
+ BBCNews,
+  metroNews,
+  CNNNews,
+  iNews,
+  KumparanNews,
+  TribunNews,
+  DailyNews,
+  DetikNews,
+  OkezoneNews,
+  CNBCNews,
+  KompasNews,
+  SindoNews,
+  TempoNews,
+  IndozoneNews,
+  AntaraNews,
+  RepublikaNews,
+  VivaNews,
+  KontanNews,
+  MerdekaNews,
+  KomikuSearch,
+  AniPlanetSearch,
+  KomikFoxSearch,
+  KomikStationSearch,
+  MangakuSearch,
+  KiryuuSearch,
+  KissMangaSearch,
+  KlikMangaSearch,
+  PalingMurah,
+  LayarKaca21,
+  AminoApps,
+  Mangatoon,
+  WAModsSearch,
+  Emojis,
+  CoronaInfo,
+  JalanTikusMeme, 
+  Cerpen,
+  Quotes,
+  Couples,
+  Darkjokes
 } = require("dhn-api")
-    //rpg function\\
-const {
-    addInventoriDarah,
-    cekDuluJoinAdaApaKagaDiJson,
-    addDarah,
-    kurangDarah,
-    getDarah
-} = require('./storage/user/darah.js')
-const {
-    cekInventoryAdaAtauGak,
-    addInventori,
-    addBesi,
-    addEmas,
-    addEmerald,
-    addUmpan,
-    addPotion,
-    kurangBesi,
-    kurangEmas,
-    kurangEmerald,
-    kurangUmpan,
-    kurangPotion,
-    getBesi,
-    getEmas,
-    getEmerald,
-    getUmpan,
+//rpg function\\
+   const { 
+     addInventoriDarah, 
+      cekDuluJoinAdaApaKagaDiJson, 
+      addDarah, 
+      kurangDarah, 
+     getDarah 
+   }  = require('./storage/user/darah.js')
+   const { 
+     cekInventoryAdaAtauGak, 
+      addInventori,  
+       addBesi, 
+       addEmas, 
+       addEmerald,
+       addUmpan,
+       addPotion,
+       kurangBesi, 
+       kurangEmas, 
+       kurangEmerald, 
+       kurangUmpan,
+       kurangPotion,
+       getBesi, 
+      getEmas, 
+     getEmerald,
+     getUmpan,
     getPotion
-} = require('./storage/user/alat_tukar.js')
-const {
-    addInventoriMonay,
-    cekDuluJoinAdaApaKagaMonaynyaDiJson,
-    addMonay,
-    kurangMonay,
-    getMonay
-} = require('./storage/user/monay.js')
-const {
-    addInventoriLimit,
-    cekDuluJoinAdaApaKagaLimitnyaDiJson,
-    addLimit,
-    kurangLimit,
-    getLimit
-} = require('./storage/user/limit.js')
-const {
-    cekDuluHasilBuruanNya,
-    addInventoriBuruan,
-    addIkan,
-    addAyam,
-    addKelinci,
-    addDomba,
-    addSapi,
-    addGajah,
-    kurangIkan,
-    kurangAyam,
-    kurangKelinci,
-    kurangDomba,
-    kurangSapi,
-    kurangGajah,
-    getIkan,
-    getAyam,
-    getKelinci,
-    getDomba,
-    getSapi,
+   } = require('./storage/user/alat_tukar.js')
+   const { 
+    addInventoriMonay, 
+    cekDuluJoinAdaApaKagaMonaynyaDiJson, 
+    addMonay, 
+    kurangMonay, 
+   getMonay 
+   } = require('./storage/user/monay.js')
+   const { 
+    addInventoriLimit, 
+    cekDuluJoinAdaApaKagaLimitnyaDiJson, 
+    addLimit, 
+    kurangLimit, 
+    getLimit 
+   } = require('./storage/user/limit.js')
+   const { 
+    cekDuluHasilBuruanNya, 
+     addInventoriBuruan, 
+     addIkan,
+      addAyam, 
+      addKelinci, 
+      addDomba, 
+      addSapi,
+      addGajah,
+      kurangIkan,
+      kurangAyam, 
+      kurangKelinci, 
+      kurangDomba, 
+      kurangSapi,
+      kurangGajah,
+      getIkan,
+      getAyam, 
+      getKelinci, 
+      getDomba,
+     getSapi,
     getGajah
-} = require('./storage/user/buruan.js')
-let DarahAwal = global.rpg.darahawal
-const isDarah = cekDuluJoinAdaApaKagaDiJson(m.sender)
-const isCekDarah = getDarah(m.sender)
-const isUmpan = getUmpan(m.sender)
-const isPotion = getPotion(m.sender)
-const isIkan = getIkan(m.sender)
-const isAyam = getAyam(m.sender)
-const isKelinci = getKelinci(m.sender)
-const isDomba = getDomba(m.sender)
-const isSapi = getSapi(m.sender)
-const isGajah = getGajah(m.sender)
-const isMonay = getMonay(m.sender)
-const isLimit = getLimit(m.sender)
-const isBesi = getBesi(m.sender)
-const isEmas = getEmas(m.sender)
-const isEmerald = getEmerald(m.sender)
-const isInventory = cekInventoryAdaAtauGak(m.sender)
-const isInventoriBuruan = cekDuluHasilBuruanNya(m.sender)
-const isInventoryLimit = cekDuluJoinAdaApaKagaLimitnyaDiJson(m.sender)
-const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
-const ikan = ['🐟', '🐠', '🐡']
+   } = require('./storage/user/buruan.js')
+   let DarahAwal =  global.rpg.darahawal
+   const isDarah = cekDuluJoinAdaApaKagaDiJson(m.sender)   
+   const isCekDarah = getDarah(m.sender)
+   const isUmpan = getUmpan(m.sender)
+   const isPotion = getPotion(m.sender)
+   const isIkan = getIkan(m.sender)
+   const isAyam = getAyam(m.sender)
+   const isKelinci = getKelinci(m.sender)
+   const isDomba = getDomba(m.sender)
+   const isSapi = getSapi(m.sender)
+   const isGajah = getGajah(m.sender)
+   const isMonay = getMonay(m.sender)
+   const isLimit = getLimit(m.sender)
+   const isBesi = getBesi(m.sender)
+   const isEmas = getEmas(m.sender)
+   const isEmerald = getEmerald(m.sender)
+   const isInventory = cekInventoryAdaAtauGak(m.sender)
+   const isInventoriBuruan = cekDuluHasilBuruanNya(m.sender)
+   const isInventoryLimit = cekDuluJoinAdaApaKagaLimitnyaDiJson(m.sender)
+   const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
+   const ikan = ['🐟','🐠','🐡']   
 
 //rpg database\\
-let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
-let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
-let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
+ let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
+ let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
+ let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database omther\\
 let xeonysticker = JSON.parse(fs.readFileSync('./XeonMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
@@ -213,625 +213,630 @@ let tebaklirik = db.data.game.lirik = []
 let tebaktebakan = db.data.game.tebakan = []
 let vote = db.data.others.vote = []
 
-module.exports = XeonBotInc = async(XeonBotInc, m, chatUpdate, store) => {
-        try {
-            var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage ? .selectedButtonId || m.message.listResponseMessage ? .singleSelectReply.selectedRowId || m.text) : ''
-            var budy = (typeof m.text == 'string' ? m.text : '')
-            var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ? ? global.prefix
-            const isCmd = body.startsWith(prefix)
-            const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
-            const args = body.trim().split(/ +/).slice(1)
-            const pushname = m.pushName || "No Name"
-            const botNumber = await XeonBotInc.decodeJid(XeonBotInc.user.id)
-            const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-            const itsMe = m.sender == botNumber ? true : false
-            const text = q = args.join(" ")
-            const quoted = m.quoted ? m.quoted : m
-            const mime = (quoted.msg || quoted).mimetype || ''
-            const isMedia = /image|video|sticker|audio/.test(mime)
-            const from = mek.key.remoteJid
-            const type = Object.keys(mek.message)[0]
-            const content = JSON.stringify(mek.message)
-            const messagesD = body.slice(0).trim().split(/ +/).shift().toLowerCase()
+module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
+    try {
+        var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
+        var budy = (typeof m.text == 'string' ? m.text : '')
+        var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
+        const isCmd = body.startsWith(prefix)
+        const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
+        const args = body.trim().split(/ +/).slice(1)
+        const pushname = m.pushName || "No Name"
+        const botNumber = await XeonBotInc.decodeJid(XeonBotInc.user.id)
+        const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+        const itsMe = m.sender == botNumber ? true : false
+        const text = q = args.join(" ")
+        const quoted = m.quoted ? m.quoted : m
+        const mime = (quoted.msg || quoted).mimetype || ''
+	    const isMedia = /image|video|sticker|audio/.test(mime)
+	    const from = mek.key.remoteJid
+	    const type = Object.keys(mek.message)[0]        
+	    const content = JSON.stringify(mek.message)
+	    const messagesD = body.slice(0).trim().split(/ +/).shift().toLowerCase()
 
-            //group\\
-            const groupMetadata = m.isGroup ? await XeonBotInc.groupMetadata(m.chat).catch(e => {}) : ''
-            const groupName = m.isGroup ? groupMetadata.subject : ''
-            const participants = m.isGroup ? await groupMetadata.participants : ''
-            const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
-            const groupOwner = m.isGroup ? groupMetadata.owner : ''
-            const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
-            const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
-            const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
-            const AntiLink = m.isGroup ? ntilink.includes(from) : false
-            const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : false
-            const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : false
-            const AntiLinkInstagram = m.isGroup ? ntilinkig.includes(from) : false
-            const AntiLinkFacebook = m.isGroup ? ntilinkfb.includes(from) : false
-            const AntiLinkTiktok = m.isGroup ? ntilinktt.includes(from) : false
-            const AntiLinkTelegram = m.isGroup ? ntilinktg.includes(from) : false
-            const AntiLinkTwitter = m.isGroup ? ntilinktwt.includes(from) : false
-            const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : false
-            const antiWame = m.isGroup ? ntwame.includes(from) : false
-            const antiToxic = m.isGroup ? nttoxic.includes(from) : false
-            const antiVirtex = m.isGroup ? ntvirtex.includes(from) : false
-            const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
-            const isAutoStick = _autostick.includes(from)
-            const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
-            const Autoreply = m.isGroup ? autorep.includes(from) : true
-            const isBan = banUser.includes(m.sender)
-            const isBanChat = m.isGroup ? banchat.includes(from) : false
-            autoreadsw = true
-
-            //member\\
-            let picaks = [flaming, fluming, flarun, flasmurf]
-            let picak = picaks[Math.floor(Math.random() * picaks.length)]
-
-            try {
-                let isNumber = x => typeof x === 'number' && !isNaN(x)
-                let limitUser = isPremium ? global.limitawal.premium : global.limitawal.free
-                let user = global.db.data.users[m.sender]
-                if (typeof user !== 'object') global.db.data.users[m.sender] = {}
-                if (user) {
-                    if (!isNumber(user.afkTime)) user.afkTime = -1
-                    if (!('afkReason' in user)) user.afkReason = ''
-                    if (!isNumber(user.limit)) user.limit = limitUser
-                } else global.db.data.users[m.sender] = {
-                    afkTime: -1,
-                    afkReason: '',
-                    limit: limitUser,
-                }
-
-                let chats = global.db.data.chats[m.chat]
-                if (typeof chats !== 'object') global.db.data.chats[m.chat] = {}
-                if (chats) {
-                    if (!('mute' in chats)) chats.mute = false
-                } else global.db.data.chats[m.chat] = {
-                    mute: false,
-                }
-
-                let setting = global.db.data.settings[botNumber]
-                if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
-                if (setting) {
-                    if (!isNumber(setting.status)) setting.status = 0
-                    if (!('autobio' in setting)) setting.autobio = false
-                    if (!('templateImage' in setting)) setting.templateImage = false
-                    if (!('templateVideo' in setting)) setting.templateVideo = false
-                    if (!('templateGif' in setting)) setting.templateGif = false
-                    if (!('templateMsg' in setting)) setting.templateMsg = false
-                    if (!('templateDocument' in setting)) setting.templateDocument = true
-                } else global.db.data.settings[botNumber] = {
-                    status: 0,
-                    autobio: false,
-                    templateImage: false,
-                    templateVideo: false,
-                    templateGif: false,
-                    templateMsg: false,
-                    templateDocument: true,
-                }
-
-            } catch (err) {
-                console.error(err)
+        //group\\
+        const groupMetadata = m.isGroup ? await XeonBotInc.groupMetadata(m.chat).catch(e => {}) : ''
+        const groupName = m.isGroup ? groupMetadata.subject : ''
+        const participants = m.isGroup ? await groupMetadata.participants : ''
+        const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
+        const groupOwner = m.isGroup ? groupMetadata.owner : ''
+    	const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
+    	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
+    	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
+        const AntiLink = m.isGroup ? ntilink.includes(from) : false
+const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : false
+const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : false
+const AntiLinkInstagram = m.isGroup ? ntilinkig.includes(from) : false
+const AntiLinkFacebook = m.isGroup ? ntilinkfb.includes(from) : false
+const AntiLinkTiktok = m.isGroup ? ntilinktt.includes(from) : false
+const AntiLinkTelegram = m.isGroup ? ntilinktg.includes(from) : false
+const AntiLinkTwitter = m.isGroup ? ntilinktwt.includes(from) : false
+const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : false
+const antiWame = m.isGroup ? ntwame.includes(from) : false
+const antiToxic = m.isGroup ? nttoxic.includes(from) : false
+const antiVirtex = m.isGroup ? ntvirtex.includes(from) : false
+const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
+const isAutoStick = _autostick.includes(from)
+const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
+const Autoreply = m.isGroup ? autorep.includes(from) : true
+        const isBan = banUser.includes(m.sender)
+        const isBanChat = m.isGroup ? banchat.includes(from) : false
+autoreadsw = true
+	    
+        //member\\
+        let picaks = [flaming,fluming,flarun,flasmurf]
+		let picak = picaks[Math.floor(Math.random() * picaks.length)]
+		
+          try {
+            let isNumber = x => typeof x === 'number' && !isNaN(x)
+            let limitUser = isPremium ? global.limitawal.premium : global.limitawal.free
+            let user = global.db.data.users[m.sender]
+            if (typeof user !== 'object') global.db.data.users[m.sender] = {}
+            if (user) {
+                if (!isNumber(user.afkTime)) user.afkTime = -1
+                if (!('afkReason' in user)) user.afkReason = ''
+                if (!isNumber(user.limit)) user.limit = limitUser
+            } else global.db.data.users[m.sender] = {
+                afkTime: -1,
+                afkReason: '',
+                limit: limitUser,
             }
+    
+            let chats = global.db.data.chats[m.chat]
+            if (typeof chats !== 'object') global.db.data.chats[m.chat] = {}
+            if (chats) {
+                if (!('mute' in chats)) chats.mute = false
+            } else global.db.data.chats[m.chat] = {
+                mute: false,
+            }
+		
+	    let setting = global.db.data.settings[botNumber]
+            if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
+	    if (setting) {
+		if (!isNumber(setting.status)) setting.status = 0
+		if (!('autobio' in setting)) setting.autobio = false
+if (!('templateImage' in setting)) setting.templateImage = false
+if (!('templateVideo' in setting)) setting.templateVideo = false
+		if (!('templateGif' in setting)) setting.templateGif = false
+		if (!('templateMsg' in setting)) setting.templateMsg = false
+		if (!('templateDocument' in setting)) setting.templateDocument = true
+	    } else global.db.data.settings[botNumber] = {
+		status: 0,
+		autobio: false,
+		templateImage: false,
+		templateVideo: false,
+		templateGif: false,
+		templateMsg: false,
+		templateDocument: true,
+	    }
+	    
+        } catch (err) {
+            console.error(err)
+        }
+	
+	// FAKE TEXT IMG
+const textImg = (teks) => {
+XeonBotInc.sendMessage(m.chat, { text :teks, }, {quoted: m, thumbnail: fs.readFileSync('./XeonMedia/image/wpmobile.png')}) 
+}
 
-            // FAKE TEXT IMG
-            const textImg = (teks) => {
-                XeonBotInc.sendMessage(m.chat, { text: teks, }, { quoted: m, thumbnail: fs.readFileSync('./XeonMedia/image/wpmobile.png') })
-            }
+//FAKE CONTACT
+const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `916909137213 -1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Click to chat\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
+//FAKEREPLY PRODUCT
+const ftoko = {
+key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})
+},
+message: {
+"productMessage": {
+"product": {
+"productImage":{
+"mimetype": "image/jpeg",
+"jpegThumbnail": log0 //The picture
+},
+"title": `${global.ownername}`, 
+"description": `${global.botname}`, 
+"currencyCode": "USD",
+"priceAmount1000": "2000",
+"retailerId": `${global.watermark}`,
+"productImageCount": 1
+},
+"businessOwnerJid": `0@s.whatsapp.net`
+}
+}
+} 
+//FAKEREPLY TROLI
+const ftroli = {
+key : {
+participant : '0@s.whatsapp.net'
+},
+message: {
+orderMessage: {
+itemCount : 1,
+status: 1,
+surface : 1,
+message: `${global.ownername}`, //
+orderTitle: `${global.botname}`,
+thumbnail: log0, //Pic
+sellerJid: '0@s.whatsapp.net'
 
-            //FAKE CONTACT
-            const fkontak = { key: { participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `916909137213 -1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Click to chat\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb, sendEphemeral: true } } }
-                //FAKEREPLY PRODUCT
-            const ftoko = {
-                    key: {
-                        fromMe: false,
-                        participant: `0@s.whatsapp.net`,
-                        ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})
-                    },
-                    message: {
-                        "productMessage": {
-                            "product": {
-                                "productImage": {
-                                    "mimetype": "image/jpeg",
-                                    "jpegThumbnail": log0 //The picture
-                                },
-                                "title": `${global.ownername}`,
-                                "description": `${global.botname}`,
-                                "currencyCode": "USD",
-                                "priceAmount1000": "2000",
-                                "retailerId": `${global.watermark}`,
-                                "productImageCount": 1
-                            },
-                            "businessOwnerJid": `0@s.whatsapp.net`
-                        }
-                    }
-                }
-                //FAKEREPLY TROLI
-            const ftroli = {
-                    key: {
-                        participant: '0@s.whatsapp.net'
-                    },
-                    message: {
-                        orderMessage: {
-                            itemCount: 1,
-                            status: 1,
-                            surface: 1,
-                            message: `${global.ownername}`, //
-                            orderTitle: `${global.botname}`,
-                            thumbnail: log0, //Pic
-                            sellerJid: '0@s.whatsapp.net'
+}
+}
+}
+//FAKEREPLY LOCATION
+const flokasi = {
+key : {
+ participant : '0@s.whatsapp.net'
+},
+message: {
+locationMessage: {
+name: `${global.location}`,
+jpegThumbnail: log0
+}
+}
+}
+//FAKEREPLY DOCUMENT
+const fdocs = {
+key : {
+ participant : '0@s.whatsapp.net'
+},
+message: {
+documentMessage: {
+title: `${global.botname}`, 
+jpegThumbnail: log0
+}
+}
+}
+//FAKEREPLY VIDEO
+const fvideo = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? 
+{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+},
+message: { 
+"videoMessage": { 
+"title": `${global.botname}`,
+"h": `${global.ownername}`,
+'seconds': '30', 
+'caption': `${global.watermark}`,
+'jpegThumbnail': log0
+}
+}
+}
+//FAKEREPLY GROUPINVITE
+const fgclink = {
+"key": {
+"fromMe": false,
+"participant": "0@s.whatsapp.net",
+"remoteJid": "0@s.whatsapp.net"
+},
+"message": {
+"groupInviteMessage": {
+"groupJid": "916909137213-1616169743@g.us",
+"inviteCode": `${global.ownername}`,
+"groupName": `${global.botname}`, 
+"caption":`${global.watermark}`, 
+'jpegThumbnail': log0
+}
+}
+}
+//FAKEREPLY GIF
+const fgif = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? 
+{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+},
+message: { 
+ "videoMessage": { 
+ "title":`${global.botname}`,
+ "h": `${global.ownername}`,
+ 'seconds': "30", 
+ 'gifPlayback': 'true', 
+ 'caption': `${global.watermark}`,
+ 'jpegThumbnail': log0
+}
+}
+} 
+//FAKEREPLY TEXT WITH THUMBNAIL
+const ftextt = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? 
+{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+},
+message: { 
+"extendedTextMessage": {
+ "text":`${global.ownername}`,
+"title": `${global.botname}`,
+ 'jpegThumbnail': log0
+}
+} 
+}
+//FAKEREPLY VN
+const fvn = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? 
+{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+},
+message: { 
+"audioMessage": {
+"mimetype":"audio/ogg; codecs=opus",
+"seconds": "9999999999999999",
+"ptt": "true"
+}
+} 
+}
+	
+	//group target \\
+const reply = (teks) => {
+           XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+        }
+        
+        const replay = (teks) => {
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+        }
+	
+        //Public & Self\\
+        if (!XeonBotInc.public) {
+            if (!m.key.fromMe) return
+        }
 
-                        }
-                    }
-                }
-                //FAKEREPLY LOCATION
-            const flokasi = {
-                    key: {
-                        participant: '0@s.whatsapp.net'
-                    },
-                    message: {
-                        locationMessage: {
-                            name: `${global.location}`,
-                            jpegThumbnail: log0
-                        }
-                    }
-                }
-                //FAKEREPLY DOCUMENT
-            const fdocs = {
-                    key: {
-                        participant: '0@s.whatsapp.net'
-                    },
-                    message: {
-                        documentMessage: {
-                            title: `${global.botname}`,
-                            jpegThumbnail: log0
-                        }
-                    }
-                }
-                //FAKEREPLY VIDEO
-            const fvideo = {
-                    key: {
-                        fromMe: false,
-                        participant: `0@s.whatsapp.net`,
-                        ...(from ? { remoteJid: "916909137213-1613049930@g.us" } : {})
-                    },
-                    message: {
-                        "videoMessage": {
-                            "title": `${global.botname}`,
-                            "h": `${global.ownername}`,
-                            'seconds': '30',
-                            'caption': `${global.watermark}`,
-                            'jpegThumbnail': log0
-                        }
-                    }
-                }
-                //FAKEREPLY GROUPINVITE
-            const fgclink = {
-                    "key": {
-                        "fromMe": false,
-                        "participant": "0@s.whatsapp.net",
-                        "remoteJid": "0@s.whatsapp.net"
-                    },
-                    "message": {
-                        "groupInviteMessage": {
-                            "groupJid": "916909137213-1616169743@g.us",
-                            "inviteCode": `${global.ownername}`,
-                            "groupName": `${global.botname}`,
-                            "caption": `${global.watermark}`,
-                            'jpegThumbnail': log0
-                        }
-                    }
-                }
-                //FAKEREPLY GIF
-            const fgif = {
-                    key: {
-                        fromMe: false,
-                        participant: `0@s.whatsapp.net`,
-                        ...(from ? { remoteJid: "916909137213-1613049930@g.us" } : {})
-                    },
-                    message: {
-                        "videoMessage": {
-                            "title": `${global.botname}`,
-                            "h": `${global.ownername}`,
-                            'seconds': "30",
-                            'gifPlayback': 'true',
-                            'caption': `${global.watermark}`,
-                            'jpegThumbnail': log0
-                        }
-                    }
-                }
-                //FAKEREPLY TEXT WITH THUMBNAIL
-            const ftextt = {
-                    key: {
-                        fromMe: false,
-                        participant: `0@s.whatsapp.net`,
-                        ...(from ? { remoteJid: "916909137213-1613049930@g.us" } : {})
-                    },
-                    message: {
-                        "extendedTextMessage": {
-                            "text": `${global.ownername}`,
-                            "title": `${global.botname}`,
-                            'jpegThumbnail': log0
-                        }
-                    }
-                }
-                //FAKEREPLY VN
-            const fvn = {
-                key: {
-                    fromMe: false,
-                    participant: `0@s.whatsapp.net`,
-                    ...(from ? { remoteJid: "916909137213-1613049930@g.us" } : {})
-                },
-                message: {
-                    "audioMessage": {
-                        "mimetype": "audio/ogg; codecs=opus",
-                        "seconds": "9999999999999999",
-                        "ptt": "true"
-                    }
-                }
-            }
+        //Push Message To Console && Auto Read\\
+        if (m.message) {
+            console.log(chalk.black(chalk.bgWhite('[ MESSAGE ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> In'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
+        }
+	
+	//reset limit every 12 hours\\
+        let cron = require('node-cron')
+        cron.schedule('00 12 * * *', () => {
+            let user = Object.keys(global.db.data.users)
+            let limitUser = isPremium ? global.limitawal.premium : global.limitawal.free
+            for (let jid of user) global.db.data.users[jid].limit = limitUser
+            console.log('Limit Reseted')
+        }, {
+            scheduled: true,
+            timezone: "Asia/Kolkata"
+        })
+        
+        //hitter
+        global.hit = {}
+if (isCmd) {
+data = await fetchJson('https://api.countapi.xyz/hit/CheemsBot/visits')
+jumlahcmd = `${data.value}`
+dataa = await fetchJson(`https://api.countapi.xyz/hit/CheemsBot${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
+jumlahharian = `${dataa.value}`
+}
+        
+	//auto set bio\\
+	if (db.data.settings[botNumber].autobio) {
+	    let setting = global.db.data.settings[botNumber]
+	    if (new Date() * 1 - setting.status > 1000) {
+		let uptime = await runtime(process.uptime())
+		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | Runtime : ${runtime(uptime)}`)
+		setting.status = new Date() * 1
+	    }
+	}
+	
+	//antispam or auto react
+//if (m.message && msgFilter.isFiltered(from)) {
+//console.log(`${global.themeemoji}[SPAM]`, color(moment(m.messageTimestamp * 1000).format('DD/MM/YYYY HH:mm:ss'), 'yellow'), color(`${command} [${args.length}]`), 'from', color(m.pushName))
+//return XeonBotInc.sendMessage(from, { react: { text: `${global.themeemoji}`, key: m.key }})
+//}
+	
+//auto read whatsapp status
+if (autoreadsw) {
+		if (from === 'status@broadcast') {
+		XeonBotInc.chatRead(from)
+	}
+	}
+//autoreader gc and pm
+if (global.autoreadpmngc) {
+if (command) {
+await XeonBotInc.sendPresenceUpdate('composing', m.chat)
+XeonBotInc.sendReadReceipt(from, m.sender, [m.key.id])}
+}
+  //autoread gc only
+  if (global.autoReadGc) {
+  if (m.isGroup) { XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id]) }
+}
+  //auto recording all
+    if (global.autoRecord) { if (m.chat) { XeonBotInc.sendPresenceUpdate('recording', m.chat) }
+}
+//autotyper all
+  if (global.autoTyping) { if (m.chat) { XeonBotInc.sendPresenceUpdate('composing', m.chat) }
+}
+//auto available all
+  if (global.available) { if (m.chat) { XeonBotInc.sendPresenceUpdate('available', m.chat) }
+  }
 
-            //group target \\
-            const reply = (teks) => {
-                XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo: { "externalAdReply": { "title": ` ${global.botname}`, "body": `${ownername}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`), "sourceUrl": `${linkz}` } } }, { quoted: m })
+// Autosticker gc
+        if (isAutoSticker) {
+            if (/image/.test(mime) && !/webp/.test(mime)) {
+                let mediac = await quoted.download()
+                await XeonBotInc.sendImageAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
+                console.log(`Auto sticker detected`)
+            } else if (/video/.test(mime)) {
+                if ((quoted.msg || quoted).seconds > 11) return
+                let mediac = await quoted.download()
+                await XeonBotInc.sendVideoAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
             }
+        }
+        //Autosticker pc
+                if (isAutoStick) {
+            if (/image/.test(mime) && !/webp/.test(mime)) {
+                let mediac = await quoted.download()
+                await XeonBotInc.sendImageAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
+                console.log(`Auto sticker detected`)
+            } else if (/video/.test(mime)) {
+                if ((quoted.msg || quoted).seconds > 11) return
+                let mediac = await quoted.download()
+                await XeonBotInc.sendVideoAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
+            }
+        }
 
-            const replay = (teks) => {
-                XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo: { "externalAdReply": { "title": ` ${global.botname}`, "body": `${ownername}`, "previewType": "PHOTO", "thumbnailUrl": ``, "thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`), "sourceUrl": `${linkz}` } } }, { quoted: m })
-            }
-
-            //Public & Self\\
-            if (!XeonBotInc.public) {
-                if (!m.key.fromMe) return
-            }
-
-            //Push Message To Console && Auto Read\\
-            if (m.message) {
-                console.log(chalk.black(chalk.bgWhite('[ MESSAGE ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> In'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
-            }
-
-            //reset limit every 12 hours\\
-            let cron = require('node-cron')
-            cron.schedule('00 12 * * *', () => {
-                let user = Object.keys(global.db.data.users)
-                let limitUser = isPremium ? global.limitawal.premium : global.limitawal.free
-                for (let jid of user) global.db.data.users[jid].limit = limitUser
-                console.log('Limit Reseted')
-            }, {
-                scheduled: true,
-                timezone: "Asia/Kolkata"
-            })
-
-            //hitter
-            global.hit = {}
-            if (isCmd) {
-                data = await fetchJson('https://api.countapi.xyz/hit/CheemsBot/visits')
-                jumlahcmd = `${data.value}`
-                dataa = await fetchJson(`https://api.countapi.xyz/hit/CheemsBot${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
-                jumlahharian = `${dataa.value}`
-            }
-
-            //auto set bio\\
-            if (db.data.settings[botNumber].autobio) {
-                let setting = global.db.data.settings[botNumber]
-                if (new Date() * 1 - setting.status > 1000) {
-                    let uptime = await runtime(process.uptime())
-                    await XeonBotInc.setStatus(`${XeonBotInc.user.name} | Runtime : ${runtime(uptime)}`)
-                    setting.status = new Date() * 1
-                }
-            }
-
-            //antispam or auto react
-            //if (m.message && msgFilter.isFiltered(from)) {
-            //console.log(`${global.themeemoji}[SPAM]`, color(moment(m.messageTimestamp * 1000).format('DD/MM/YYYY HH:mm:ss'), 'yellow'), color(`${command} [${args.length}]`), 'from', color(m.pushName))
-            //return XeonBotInc.sendMessage(from, { react: { text: `${global.themeemoji}`, key: m.key }})
-            //}
-
-            //auto read whatsapp status
-            if (autoreadsw) {
-                if (from === 'status@broadcast') {
-                    XeonBotInc.chatRead(from)
-                }
-            }
-            //autoreader gc and pm
-            if (global.autoreadpmngc) {
-                if (command) {
-                    await XeonBotInc.sendPresenceUpdate('composing', m.chat)
-                    XeonBotInc.sendReadReceipt(from, m.sender, [m.key.id])
-                }
-            }
-            //autoread gc only
-            if (global.autoReadGc) {
-                if (m.isGroup) { XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id]) }
-            }
-            //auto recording all
-            if (global.autoRecord) {
-                if (m.chat) { XeonBotInc.sendPresenceUpdate('recording', m.chat) }
-            }
-            //autotyper all
-            if (global.autoTyping) {
-                if (m.chat) { XeonBotInc.sendPresenceUpdate('composing', m.chat) }
-            }
-            //auto available all
-            if (global.available) {
-                if (m.chat) { XeonBotInc.sendPresenceUpdate('available', m.chat) }
-            }
-
-            // Autosticker gc
-            if (isAutoSticker) {
-                if (/image/.test(mime) && !/webp/.test(mime)) {
-                    let mediac = await quoted.download()
-                    await XeonBotInc.sendImageAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
-                    console.log(`Auto sticker detected`)
-                } else if (/video/.test(mime)) {
-                    if ((quoted.msg || quoted).seconds > 11) return
-                    let mediac = await quoted.download()
-                    await XeonBotInc.sendVideoAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
-                }
-            }
-            //Autosticker pc
-            if (isAutoStick) {
-                if (/image/.test(mime) && !/webp/.test(mime)) {
-                    let mediac = await quoted.download()
-                    await XeonBotInc.sendImageAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
-                    console.log(`Auto sticker detected`)
-                } else if (/video/.test(mime)) {
-                    if ((quoted.msg || quoted).seconds > 11) return
-                    let mediac = await quoted.download()
-                    await XeonBotInc.sendVideoAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
-                }
-            }
-
-            // AntiLinkgc
-            if (AntiLink) {
-                linkgce = await XeonBotInc.groupInviteCode(from)
-                if (budy.includes(`https://chat.whatsapp.com/${linkgce}`)) {
-                    reply(`\`\`\`「 Group Link Detected 」\`\`\`\n\nلن يطردك البوت لأن ما ارسلته هو رابط لهذه المجموعة`)
-                } else if (isUrl(m.text)) {
-                    bvl = `\`\`\`「 Group Link Detected 」\`\`\`\n\nأرسل المسؤول رابطًا ، والمسؤول حر في نشر أي رابط`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف ارتباط المجموعة 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط  في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-            }
-            // Antiwame by xeon
-            if (antiWame)
-                if (budy.includes(`wa.me`)) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 Wa.me Link Detected 」\`\`\`\n\nأرسل المسؤول رابط wa.me ، والمسؤول حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط Wa.me 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيديو يوتيوب في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-            if (antiWame)
-                if (budy.includes(`http://wa.me`)) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 Wa.me Link Detected 」\`\`\`\n\nأرسل المسؤول رابط wa.me ، والمسؤول حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط Wa.me 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيديو يوتيوب في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antivirtex by xeon
-            if (antiVirtex) {
-                if (budy.length > 3500) {
-                    reply(`Somebody spammed virus!! Mark as read⚠️\n`.repeat(300))
-                    reply(`\`\`\`「 Virus Detected 」\`\`\`\n\nآسف سوف يتم طردك !`)
-                    if (!isBotAdmins) return reply(mess.botAdmin)
-                    XeonBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-                }
-            }
-            //anti bad words by xeon
-            if (antiToxic)
-                if (bad.includes(messagesD)) {
-                    tos = ['مرحبًا ، راقب فمك', 'لم تتعلم كيف تتكلم؟', 'توقف عن كونك سامة يا صديقي🤢', 'لا تكون سامة🦄']
-                    sin = tos[Math.floor(Math.random() * (tos.length))]
-                    reply(sin)
-                    if (m.text) {
-                        bvl = `\`\`\`「 Bad Word Detected 」\`\`\`\n\nأنت تستخدم كلمة سيئة ولكنك مشرف ولهذا لن أطردك😇`
-                        if (isAdmins) return reply(bvl)
-                        if (m.key.fromMe) return reply(bvl)
-                        if (isCreator) return reply(bvl)
-                        kice = m.sender
-                        await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                        XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف كلمة سيئة 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب استخدام كلمات سيئة في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                    }
-                }
-                //antilink youtube video by xeon
-            if (AntiLinkYoutubeVid)
-                if (budy.includes("https://youtu.be/")) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 تم اكتشاف رابط فيديو يوتيوب 」\`\`\`\n\nأرسل المسؤول رابط فيديو يوتيوب ، والمسؤول حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط فيديو يوتيوب 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيديو يوتيوب في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antilink youtube channel by xeon
-            if (AntiLinkYoutubeChannel)
-                if (budy.includes("https://youtube.com/")) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 تم اكتشاف رابط قناة يوتيوب 」\`\`\`\n\nأرسل المسؤول رابط قناة يوتيوب ، والمسؤول مجاني في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط قناة يوتيوب 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط قناة يوتيوب في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antilink instagram by xeon
-            if (AntiLinkInstagram)
-                if (budy.includes("https://www.instagram.com/")) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 تم اكتشاف رابط انستجرام 」\`\`\`\n\قام المسؤول بإرسال رابط انستجرام ، المشرف حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط انستجرام 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط انستجرام في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antilink facebook by xeon
-            if (AntiLinkFacebook)
-                if (budy.includes("https://facebook.com/")) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 تم اكتشاف رابط فيسبوك 」\`\`\`\n\nقام المسؤول بإرسال رابط فيسبوك ، والمسؤول حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط فيسبوك 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيسبوك في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antilink telegram by xeon
-            if (AntiLinkTelegram)
-                if (budy.includes("https://t.me/")) {
-                    if (AntiLinkTelegram)
-                        if (!isBotAdmins) return
-                    bvl = `\`\`\`「 تم اكتشاف رابط تليجرام 」\`\`\`\n\nأرسل المسؤول رابط تليجرام ، والمسؤول حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط تليجرام 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط تليجرام في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antilink tiktok by xeon
-            if (AntiLinkTiktok)
-                if (budy.includes("https://www.tiktok.com/")) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 تم اكتشاف رابط تيكتوك 」\`\`\`\n\nقام مشرف بإرسال رابط تيكتوك ، المشرف حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط تيكتوك 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط تيكتوك في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antilink twitter by xeon
-            if (AntiLinkTwitter)
-                if (budy.includes("https://twitter.com/")) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 تم اكتشاف رابط تويتر 」\`\`\`\n\nقام مشرف بإرسال رابط تويتر ، المشرف حر في إرسال أي رابط😇`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط تيكتوك 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط تويتر في هذه المجموعة`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
-                //antilink all by xeon
-            if (AntiLinkAll)
-                if (budy.includes("https://")) {
-                    if (!isBotAdmins) return
-                    bvl = `\`\`\`「 منع الروابط 」\`\`\`\n\nالادمن بعت رابط والادمن يبعت اللي هوا عاوزو`
-                    if (isAdmins) return reply(bvl)
-                    if (m.key.fromMe) return reply(bvl)
-                    if (isCreator) return reply(bvl)
-                    kice = m.sender
-                    await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-                    XeonBotInc.sendMessage(from, { text: `\`\`\`「 تم اكتشاف رابط من العرص دا 」\`\`\`\n\n@${kice.split("@")[0]} تم طرد ابن المتناكه دا عشان بعت رابط في الجروب`, contextInfo: { mentionedJid: [kice] } }, { quoted: m })
-                } else {}
+	// AntiLinkgc
+if (AntiLink) {
+linkgce = await XeonBotInc.groupInviteCode(from)
+if (budy.includes(`https://chat.whatsapp.com/${linkgce}`)) {
+reply(`\`\`\`「 Group Link Detected 」\`\`\`\n\nلن يطردك البوت لأن ما ارسلته هو رابط لهذه المجموعة`)
+} else if (isUrl(m.text)) {
+bvl = `\`\`\`「 Group Link Detected 」\`\`\`\n\nأرسل المسؤول رابطًا ، والمسؤول حر في نشر أي رابط`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف ارتباط المجموعة 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط  في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+}
+  // Antiwame by xeon
+  if (antiWame)
+  if (budy.includes(`wa.me`)) {
+if (!isBotAdmins) return
+bvl = `\`\`\`「 Wa.me Link Detected 」\`\`\`\n\nأرسل المسؤول رابط wa.me ، والمسؤول حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط Wa.me 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيديو يوتيوب في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+  if (antiWame)
+  if (budy.includes(`http://wa.me`)) {
+if (!isBotAdmins) return
+bvl = `\`\`\`「 Wa.me Link Detected 」\`\`\`\n\nأرسل المسؤول رابط wa.me ، والمسؤول حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط Wa.me 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيديو يوتيوب في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antivirtex by xeon
+  if (antiVirtex) {
+  if (budy.length > 3500) {
+  reply(`Somebody spammed virus!! Mark as read⚠️\n`.repeat(300))
+  reply(`\`\`\`「 Virus Detected 」\`\`\`\n\nآسف سوف يتم طردك !`)
+  if (!isBotAdmins) return reply(mess.botAdmin)
+  XeonBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+  }
+  }
+//anti bad words by xeon
+if (antiToxic)
+if (bad.includes(messagesD)) {
+tos = ['مرحبًا ، راقب فمك','لم تتعلم كيف تتكلم؟','توقف عن كونك سامة يا صديقي🤢','لا تكون سامة🦄']
+sin =  tos[Math.floor(Math.random() * (tos.length))]
+reply(sin)
+if (m.text) {
+bvl = `\`\`\`「 Bad Word Detected 」\`\`\`\n\nأنت تستخدم كلمة سيئة ولكنك مشرف ولهذا لن أطردك😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف كلمة سيئة 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب استخدام كلمات سيئة في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+}
+//antilink youtube video by xeon
+if (AntiLinkYoutubeVid)
+if (budy.includes("https://youtu.be/")){
+if (!isBotAdmins) return
+bvl = `\`\`\`「 تم اكتشاف رابط فيديو يوتيوب 」\`\`\`\n\nأرسل المسؤول رابط فيديو يوتيوب ، والمسؤول حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط فيديو يوتيوب 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيديو يوتيوب في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antilink youtube channel by xeon
+if (AntiLinkYoutubeChannel)
+   if (budy.includes("https://youtube.com/")){
+if (!isBotAdmins) return
+bvl = `\`\`\`「 تم اكتشاف رابط قناة يوتيوب 」\`\`\`\n\nأرسل المسؤول رابط قناة يوتيوب ، والمسؤول مجاني في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط قناة يوتيوب 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط قناة يوتيوب في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antilink instagram by xeon
+if (AntiLinkInstagram)
+   if (budy.includes("https://www.instagram.com/")){
+if (!isBotAdmins) return
+bvl = `\`\`\`「 تم اكتشاف رابط انستجرام 」\`\`\`\n\قام المسؤول بإرسال رابط انستجرام ، المشرف حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط انستجرام 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط انستجرام في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antilink facebook by xeon
+if (AntiLinkFacebook)
+   if (budy.includes("https://facebook.com/")){
+if (!isBotAdmins) return
+bvl = `\`\`\`「 تم اكتشاف رابط فيسبوك 」\`\`\`\n\nقام المسؤول بإرسال رابط فيسبوك ، والمسؤول حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط فيسبوك 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط فيسبوك في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antilink telegram by xeon
+if (AntiLinkTelegram)
+   if (budy.includes("https://t.me/")){
+if (AntiLinkTelegram)
+if (!isBotAdmins) return
+bvl = `\`\`\`「 تم اكتشاف رابط تليجرام 」\`\`\`\n\nأرسل المسؤول رابط تليجرام ، والمسؤول حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط تليجرام 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط تليجرام في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antilink tiktok by xeon
+if (AntiLinkTiktok)
+   if (budy.includes("https://www.tiktok.com/")){
+if (!isBotAdmins) return
+bvl = `\`\`\`「 تم اكتشاف رابط تيكتوك 」\`\`\`\n\nقام مشرف بإرسال رابط تيكتوك ، المشرف حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط تيكتوك 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط تيكتوك في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antilink twitter by xeon
+if (AntiLinkTwitter)
+   if (budy.includes("https://twitter.com/")){
+if (!isBotAdmins) return
+bvl = `\`\`\`「 تم اكتشاف رابط تويتر 」\`\`\`\n\nقام مشرف بإرسال رابط تويتر ، المشرف حر في إرسال أي رابط😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط تيكتوك 」\`\`\`\n\n@${kice.split("@")[0]} تم طرده بسبب إرسال رابط تويتر في هذه المجموعة`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
+//antilink all by xeon
+if (AntiLinkAll)
+   if (budy.includes("https://")){
+if (!isBotAdmins) return
+bvl = `\`\`\`「 منع الروابط 」\`\`\`\n\nالادمن بعت رابط والادمن يبعت اللي هوا عاوزو`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 تم اكتشاف رابط من العرص دا 」\`\`\`\n\n@${kice.split("@")[0]} تم طرد ابن المتناكه دا عشان بعت رابط في الجروب`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+} else {
+}
 
                 //auto reply by xeon
-                //if (Autoreply) //remove forwad slashes to make it autoreply on off
-            for (let anji of xeonysticker) {
-                if (budy === anji) {
-                    result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
-                    XeonBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
-                }
-            }
-            //if (Autoreply) //remove forwad slashes to make it autoreply on off
-            for (let anju of xeonyaudio) {
-                if (budy === anju) {
-                    result = fs.readFileSync(`./XeonMedia/audio/${anju}.mp3`)
-                    XeonBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-                }
-            }
-            //if (Autoreply) //remove forwad slashes to make it autoreply on off
-            for (let anjh of xeonyimage) {
-                if (budy === anjh) {
-                    result = fs.readFileSync(`./XeonMedia/image/${anjh}.jpg`)
-                    XeonBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
-                }
-            }
-            //if (Autoreply) //remove forwad slashes to make it autoreply on off
-            for (let anjh of xeonyvideo) {
-                if (budy === anjh) {
-                    result = fs.readFileSync(`./XeonMedia/video/${anjh}.mp4`)
-                    XeonBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
-                }
-            }
+  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+        for (let anji of xeonysticker){
+				if (budy === anji){
+					result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
+					XeonBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
+					}
+			}
+			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+			for (let anju of xeonyaudio){
+				if (budy === anju){
+					result = fs.readFileSync(`./XeonMedia/audio/${anju}.mp3`)
+					XeonBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+					}
+			}
+			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+			for (let anjh of xeonyimage){
+				if (budy === anjh){
+					result = fs.readFileSync(`./XeonMedia/image/${anjh}.jpg`)
+					XeonBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
+					}
+			}
+			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+					for (let anjh of xeonyvideo){
+				if (budy === anjh){
+					result = fs.readFileSync(`./XeonMedia/video/${anjh}.mp4`)
+					XeonBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
+					}
+				  }
 
-            //emoji 
-            const emote = (satu, dua) => {
-                try {
-                    const { EmojiAPI } = require("emoji-api");
-                    const emoji = new EmojiAPI();
-                    emoji.get(satu)
-                        .then(emoji => {
-                            const buttons = [{ buttonId: "y", buttonText: { displayText: satu }, type: 1 }]
-                            const buttonMessage = { image: { url: emoji.images[dua].url }, caption: "اي خدمه يروحي🌚💕!", footerText: `${botname}`, buttons: buttons, headerType: 4 }
-                            XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
-                        })
-                } catch (e) {
-                    reply("Emoji error, please enter another emoji\nNOTE : Just enter 1 emoji")
-                }
+//emoji 
+const emote = (satu, dua) => {
+try{	    
+const { EmojiAPI } = require("emoji-api");
+const emoji = new EmojiAPI();
+emoji.get(satu)
+.then(emoji => {
+const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
+const buttonMessage = {image: {url: emoji.images[dua].url},caption: "اي خدمه يروحي🌚💕!",footerText: `${botname}`,buttons: buttons,headerType: 4}
+XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
+})
+} catch (e) {
+reply("Emoji error, please enter another emoji\nNOTE : Just enter 1 emoji")
+}
+}
+
+      //Mute Chat\\
+      if (db.data.chats[m.chat].mute && !isAdmins && !isCreator) {
+      return
+      }
+        
+        //media detect \\
+		const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
+		const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
+		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
+		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
+        
+        //Respon Cmd with media\\
+        if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
+        let hash = global.db.data.sticker[m.msg.fileSha256.toString('base64')]
+        let { text, mentionedJid } = hash
+        let messages = await generateWAMessage(m.chat, { text: text, mentions: mentionedJid }, {
+            userJid: XeonBotInc.user.id,
+            quoted: m.quoted && m.quoted.fakeObj
+        })
+        messages.key.fromMe = areJidsSameUser(m.sender, XeonBotInc.user.id)
+        messages.key.id = m.key.id
+        messages.pushName = m.pushName
+        if (m.isGroup) messages.participant = m.sender
+        let msg = {
+            ...chatUpdate,
+            messages: [proto.WebMessageInfo.fromObject(messages)],
+            type: 'append'
+        }
+        XeonBotInc.ev.emit('messages.upsert', msg)
+        }
+	    
+	if (('family100'+m.chat in _family100) && isCmd) {
+            kuis = true
+            let room = _family100['family100'+m.chat]
+            let teks = budy.toLowerCase().replace(/[^\w\s\-]+/, '')
+            let isSurender = /^((me)?give up|surr?ender)$/i.test(m.text)
+            if (!isSurender) {
+                let index = room.jawaban.findIndex(v => v.toLowerCase().replace(/[^\w\s\-]+/, '') === teks)
+                if (room.terjawab[index]) return !0
+                room.terjawab[index] = m.sender
             }
-
-            //Mute Chat\\
-            if (db.data.chats[m.chat].mute && !isAdmins && !isCreator) {
-                return
-            }
-
-            //media detect \\
-            const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
-            const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
-            const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
-            const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
-
-            //Respon Cmd with media\\
-            if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
-                let hash = global.db.data.sticker[m.msg.fileSha256.toString('base64')]
-                let { text, mentionedJid } = hash
-                let messages = await generateWAMessage(m.chat, { text: text, mentions: mentionedJid }, {
-                    userJid: XeonBotInc.user.id,
-                    quoted: m.quoted && m.quoted.fakeObj
-                })
-                messages.key.fromMe = areJidsSameUser(m.sender, XeonBotInc.user.id)
-                messages.key.id = m.key.id
-                messages.pushName = m.pushName
-                if (m.isGroup) messages.participant = m.sender
-                let msg = {
-                    ...chatUpdate,
-                    messages: [proto.WebMessageInfo.fromObject(messages)],
-                    type: 'append'
-                }
-                XeonBotInc.ev.emit('messages.upsert', msg)
-            }
-
-            if (('family100' + m.chat in _family100) && isCmd) {
-                kuis = true
-                let room = _family100['family100' + m.chat]
-                let teks = budy.toLowerCase().replace(/[^\w\s\-]+/, '')
-                let isSurender = /^((me)?give up|surr?ender)$/i.test(m.text)
-                if (!isSurender) {
-                    let index = room.jawaban.findIndex(v => v.toLowerCase().replace(/[^\w\s\-]+/, '') === teks)
-                    if (room.terjawab[index]) return !0
-                    room.terjawab[index] = m.sender
-                }
-                let isWin = room.terjawab.length === room.terjawab.filter(v => v).length
-                let caption = `
+            let isWin = room.terjawab.length === room.terjawab.filter(v => v).length
+            let caption = `
 Answer The Following Questions :\n${room.soal}\n\n\nThere Is ${room.jawaban.length} Answer ${room.jawaban.find(v => v.includes(' ')) ? `(Some Answers Have Spaces)` : ''}
 ${isWin ? `All Answers Answered` : isSurender ? 'Surrender!' : ''}
 ${Array.from(room.jawaban, (jawaban, index) => {
@@ -1200,7 +1205,7 @@ let delbans = banUser.indexOf(orgnye)
 banUser.splice(delbans, 1)
 replay(`تم إلغاء حظر المستخدم بنجاح`)
 } else {
-replay("اذا كنت تظن ان هذا خطأ برجاء اخذ لقطه شاشه و ارساله الى المالك")
+replay("ايرور🙂!")
 }
 }
 break
@@ -3069,6 +3074,36 @@ replay('النجاح في إيقاف مضاد للورم في هذه المجم�
   }
   }
   break
+  case 'الاباحي': {
+   if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (!m.isGroup) return replay(mess.group)
+if (!isBotAdmins) return replay(mess.botAdmin)
+if (!isAdmins && !isCreator) return replay(mess.admin)
+if (args[0] === "on") {
+if (AntiNsfw) return replay('بالفعل نشط!! ')
+ntnsfw.push(from)
+replay('النجاح في تشغيل nsfw في هذه المجموعة')
+var groupe = await XeonBotInc.groupMetadata(from)
+var members = groupe['participants']
+var mems = []
+members.map(async adm => {
+mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
+})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️تحذير⚠️ 」\`\`\`\n\nتم تمكين ميزة الاباحي (ليست آمنة للعمل) في هذه المجموعة ، مما يعني أنه يمكن للمرء الوصول إلى الرسومات الجنسية من الروبوت!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+} else if (args[0] === "off") {
+if (!AntiNsfw) return replay('تم الغاء تنشيطه بالغعل')
+let off = ntnsfw.indexOf(from)
+ntnsfw.splice(off, 1)
+replay('النجاح في إيقاف تشغيل الاباحي في هذه المجموعة')
+} else {
+  let buttonsntnsfw = [
+  { buttonId: `${command} on`, buttonText: { displayText: 'فتح' }, type: 1 },
+  { buttonId: `${command} off`, buttonText: { displayText: 'قفل' }, type: 1 }
+  ]
+  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `يرجى النقر على الزر أدناه\n\nفتح\nوقفل`, `${global.botname}`, m)
+  }
+  }
   break
              case 'الصوت': {
              	if (isBan) return reply(mess.ban)	 			
@@ -3645,6 +3680,17 @@ let bjif = await GIFBufferToVideoBuffer(bjf)
                     return reply('error..')
                                     })
 break
+case 'hentaivid': case 'hentaivideo': {
+	                        	            	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+	if (!m.isGroup) return replay(mess.group)
+if (!AntiNsfw) return reply(mess.nsfw)
+                reply(mess.wait)
+                anu = await hentai()
+                result912 = anu[Math.floor(Math.random(), anu.length)]
+                XeonBotInc.sendMessage(m.chat, { video: { url: result912.video_1 }, caption: `${themeemoji} Title : ${result912.title}\n${themeemoji} Category : ${result912.category}\n${themeemoji} Mimetype : ${result912.type}\n${themeemoji} Views : ${result912.views_count}\n${themeemoji} Shares : ${result912.share_count}\n${themeemoji} Source : ${result912.link}\n${themeemoji} Media Url : ${result912.video_1}` }, { quoted: m })
+            }
+            break
 case 'trap' :
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -4659,7 +4705,7 @@ quere = args.join(" ")
 convertes = await toHur(quere)
 replay(`\`\`\`「 ALPHABET 」\`\`\`\n*•> Number :*\n${quere}\n*•> Alphabet :*\n${convertes}`)
 } catch {
-replay(`اذا كنت تظن ان هذا خطأ برجاء اخذ لقطه شاشه و ارساله الى المالك`)
+replay(`ايرور🙂!`)
 }
 }
 break
@@ -6264,7 +6310,7 @@ XeonBotInc.sendMessage(from, {video:{url:args[1]}, caption:'Done!', mimetype:'vi
 } else if (args[0] === "jpg") {
 XeonBotInc.sendMessage(from, {image:{url:args[1]}, caption:'Done!'}, {quoted:m})
 } else {
-reply("اذا كنت تظن ان هذا خطأ برجاء اخذ لقطه شاشه و ارساله الى المالك ")
+reply("ايرور🙂! ")
 }
 }
 break
@@ -8995,6 +9041,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 قائمه ا
 ╠${prefix}antitoxic [on/off]
 ╠${prefix}antiwame [on/off]
 ╠${prefix}autoreply [on/off]
+╠${prefix}الاباحي [on/off]
 ╠${prefix}رفع [reply/tag]
 ╠${prefix}تنزيل [reply/tag]
 ╠${prefix}react [reply emoji]
@@ -9311,6 +9358,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 قائمه ا
 ╠${prefix}neko
 ╠${prefix}gura
 ╠═══════✪「 قائمه انمي اباحي 」
+╠${prefix}hentaivideo
 ╠${prefix}yuri
 ╠${prefix}masturbation
 ╠${prefix}thighs
@@ -10152,6 +10200,7 @@ case 'nsfwmenu':
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
 await XeonBotInc.send5ButImg(from, `╔═══════✪「 قائمه انمي اباحي 」	
+╠${prefix}hentaivideo
 ╠${prefix}yuri
 ╠${prefix}masturbation
 ╠${prefix}thighs
